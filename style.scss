@@ -1,0 +1,60 @@
+@import "base/reset";
+@import "base/colors";
+@import "base/absstract";
+
+body {
+    background: url(pngtree-rain-drops-on-window-with-street-lights-in-the-night-picture-image_3180459.jpg) center/cover fixed;
+}
+
+.wrapper {
+
+    font-size: 150px;
+    font-weight: bold;
+    
+    @include pos();
+
+    .div-one {
+ 
+        animation-name: anim;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1.5s;
+        background-color: $primaryColor;
+        width: 300px;
+        height: 300px;
+        border: 8px solid white;
+        opacity: 0.5;
+    }
+    
+    .div-two {
+        animation-name: anim;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 3s;
+        background-color: $secondaryColor;
+        width: 300px;
+        height: 300px;
+        border: 8px solid white;
+        opacity: 0.5;
+    }
+
+    .div-three {
+        animation-name: anim;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 4.5s;
+        background-color: $ternaryColor;
+        width: 300px;
+        height: 300px;
+        border: 8px solid white;
+        opacity: 0.5;
+    }    
+}
+
+.div-one, .div-two, .div-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

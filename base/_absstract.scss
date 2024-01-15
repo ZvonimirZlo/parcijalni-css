@@ -1,0 +1,18 @@
+@mixin pos () {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px;
+    margin-top: 29vh;
+}
+
+@keyframes anim
+{
+    from {
+        transform: translateY(-300%);
+      }
+    
+      to {
+        transform: translateY(0%);
+      }
+    }
